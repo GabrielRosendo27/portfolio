@@ -1,0 +1,35 @@
+:root {
+  --branco: #ffffff;
+  --preto: #000000;
+  --verde: #00ff7f;
+  --laranja: #d98719;
+  --azul-escuro: #1d1d31;
+  --cinza-escuro: #1c1c1c;
+  --branco2: #fffafa;
+  --rob300: 300;
+  --rob400: 400;
+}
+.r300 {
+  font-weight: var(--rob300);
+}
+.r400 {
+  font-weight: var(--rob400);
+}
+.branco {
+  color: var(--branco);
+}
+.preto {
+  color: var(--preto);
+}
+.verde {
+  color: var(--verde);
+}
+.laranja {
+  color: var(--laranja);
+}
+.azul-escuro {
+  color: var(--azul-escuro);
+}
+.cinza {
+  color: var(--cinza);
+}

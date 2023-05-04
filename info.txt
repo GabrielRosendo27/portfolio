@@ -1,0 +1,14 @@
+/utilitários:
+- cores: #FFFFFF,#000000,#00FF7F",#D98719,#2F2F4F,#A8A8A8
+- tipografias: Roboto
+- tecnologias: HTML, CSS, JavaScript
+
+
+/index
+- nome
+- imagens de projetos
+- sobre mim
+  ;
+- projetos
+  ;
+- contato 
