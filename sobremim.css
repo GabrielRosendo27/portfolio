@@ -18,14 +18,14 @@
   color: var(--branco);
   letter-spacing: -0.5px;
   font-size: 2.3rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2rem;
 }
 .sobre-mim span {
-  color: var(--verde);
+  color: var(--vermelho);
   font-size: 1.6rem;
-  font-weight: 300;
-  margin-left: 180px;
+  font-weight: 400;
+  margin-left: 170px;
   display: block;
   margin-bottom: 30px;
   letter-spacing: 0.5px;
@@ -35,4 +35,22 @@
   text-align: left;
   line-height: 1.8rem;
   letter-spacing: 1px;
+}
+.p {
+  margin-top: 5px;
+}
+.two {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 25px;
+  gap: 25px;
+}
+/* button */
+.button-box {
+  margin-left: 200px;
+}
+/* icons github linkedin */
+.icons a img {
+  width: 30px;
 }

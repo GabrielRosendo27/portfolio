@@ -4,8 +4,10 @@
   --verde: #00ff7f;
   --laranja: #d98719;
   --azul-escuro: #1d1d31;
-  --cinza-escuro: #1c1c1c;
-  --branco2: #fffafa;
+  --cinza-escuro:background-color: #181818;
+  background-image: linear-gradient(160deg, #181818 0%, #1c1c1c 100%);
+  --branco2: #fafafa;
+  --vermelho: #ff0043;
   --rob300: 300;
   --rob400: 400;
 }
@@ -32,4 +34,27 @@
 }
 .cinza {
   color: var(--cinza);
+}
+.vermelho {
+  color: var(--vermelho);
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  background-color: var(--vermelho);
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  width: 160px;
+  transition: width 0.2s;
+  text-align: center;
+}
+.button:hover{
+  background: #cc0037;
+  width: 180px;
+  text-align: center;
 }
