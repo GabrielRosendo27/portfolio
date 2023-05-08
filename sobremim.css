@@ -51,6 +51,18 @@
   margin-left: 200px;
 }
 /* icons github linkedin */
-.icons a img {
-  width: 30px;
+.icons {
+  position: relative;
+}
+.icon-1 {
+  position: absolute;
+  width: 24px;
+  top: 15px;
+  left: 0px;
+}
+.icon-2 {
+  position: absolute;
+  width: 24px;
+  top: 9px;
+  left: 20px;
 }
