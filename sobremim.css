@@ -48,7 +48,12 @@
 }
 /* button */
 .button-box {
-  margin-left: 200px;
+  margin-top: 5px;
+  margin-left: 230px;
+  transition: margin-left 0.5s;
+}
+.button-box:hover {
+  margin-left: 233px;
 }
 /* icons github linkedin */
 .icons {

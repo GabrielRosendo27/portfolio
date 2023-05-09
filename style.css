@@ -18,3 +18,14 @@ html {
   margin: 0 auto;
   height: 100vh;
 }
+.container2 {
+  max-width: 900px;
+  margin: 0 auto;
+  height: max-content;
+  border: 2px solid white;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 6px;
+  opacity: 0.1;
+  padding-bottom: 50px;
+}
