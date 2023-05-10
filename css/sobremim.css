@@ -1,5 +1,6 @@
 .background1 {
   background-color: var(--cinza-escuro);
+  height: 100%;
 }
 .sobre-mim {
   width: 900px;
