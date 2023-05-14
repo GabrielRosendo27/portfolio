@@ -19,6 +19,7 @@ body {
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
+  cursor: pointer;
 }
 .home {
   position: relative;
@@ -26,6 +27,35 @@ body {
   left: 650px;
   padding: 6px 12px;
 }
-.home a {
+/* back button  */
+.back-button-div {
+  position: fixed;
+  bottom: 45px;
+  width: 100%;
+  text-align: center;
+}
+.back-button {
+  display: inline-block;
   color: white;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-align: center;
+}
+/* icons  */
+.icons-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+}
+.icon-1p {
+  width: 24px;
+}
+.icon-2p {
+  width: 24px;
 }
