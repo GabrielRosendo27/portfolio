@@ -13,6 +13,7 @@ body {
   top: 50%;
   transform: translate(0%, -50%);
   user-select: none;
+  transition: all 0.2s;
 }
 #image-track > .image {
   width: 40vmin;
@@ -20,6 +21,10 @@ body {
   object-fit: cover;
   object-position: 100% center;
   cursor: pointer;
+  transition: all 0.2s;
+}
+.image:hover {
+  opacity: 0.5;
 }
 .home {
   position: relative;
@@ -44,6 +49,7 @@ body {
   letter-spacing: 0.5px;
   text-decoration: none;
   text-align: center;
+  user-select: none;
 }
 /* icons  */
 .icons-div {
@@ -52,10 +58,16 @@ body {
   align-items: center;
   gap: 10px;
   margin-top: 70px;
+  user-select: none;
 }
 .icon-1p {
   width: 24px;
 }
 .icon-2p {
   width: 24px;
+}
+
+/* */
+.descricao-projeto {
+  color: white;
 }
