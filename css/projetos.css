@@ -23,6 +23,27 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
+.image-slide {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 80%;
+  top: 85%;
+  transform: translate(0%, -50%);
+  user-select: none;
+  transition: all 0.2s;
+}
+.image-slide > .images {
+  width: 10vmin;
+  height: 20vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.images:hover {
+  padding: 1vmin !important;
+}
 .image:hover {
   padding: 2vmin !important;
 }
@@ -34,8 +55,8 @@ body {
 }
 /* back button  */
 .back-button-div {
-  position: fixed;
-  bottom: 45px;
+  position: relative;
+  top: 69%;
   width: 100%;
   text-align: center;
 }
