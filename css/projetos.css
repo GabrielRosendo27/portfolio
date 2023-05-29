@@ -41,6 +41,11 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
+.arrow {
+  color: white;
+  font-weight: bold;
+  display: none;
+}
 .images:hover {
   padding: 1vmin !important;
 }
