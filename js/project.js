@@ -2,10 +2,6 @@ const imgTrack = document.getElementById("image-track");
 const imgs = document.querySelectorAll(".image");
 const arrow = document.querySelector(".arrow");
 //
-const imgSlide = document.querySelector(".image-slide");
-const imgsR = document.querySelector(".images");
-//
-
 function addClass() {
   imgTrack.removeAttribute("id");
   imgTrack.classList.add("image-slide");
@@ -17,19 +13,20 @@ function addClass() {
 }
 //
 function removeClass() {
-  if (imgSlide) {
-    imgSlide.classList.remove(imgSlide);
-    imgSlide.classList.add(imgTrack);
-    imgsR.forEach((i) => {
-      i.classList.remove(imgsR);
-      i.classList.add(imgs);
+  if (imgTrack.classList.contains("image-slide")) {
+    imgTrack.classList.remove("image-slide");
+    imgTrack.setAttribute("id", "image-track");
+    imgs.forEach((i) => {
+      i.classList.remove("images");
+      i.classList.add("image");
+      arrow.style.display = "none";
     });
   }
 }
 //
-
 imgs.forEach((i) => {
   i.onclick = addClass;
 });
-
+//
 arrow.onclick = removeClass;
+//

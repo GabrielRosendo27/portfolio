@@ -45,6 +45,17 @@ body {
   color: white;
   font-weight: bold;
   display: none;
+  cursor: pointer;
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  padding: 8px 6px;
+  background: green;
+  border-radius: 2px;
+}
+.arrow:hover {
+  background-color: greenyellow;
+  color: black;
 }
 .images:hover {
   padding: 1vmin !important;
