@@ -91,10 +91,12 @@ body {
 /* icons  */
 .icons-div {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 10px;
-  margin-top: 70px;
+  margin-top: 30px;
+  margin-right: 35px;
+  margin-bottom: 30px;
   user-select: none;
 }
 .icon-1p {
@@ -105,3 +107,46 @@ body {
 }
 
 /* */
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1200px;
+  height: 355px;
+  margin: 0 auto;
+  border: 1px solid rgb(73, 73, 73);
+  border-radius: 6px;
+}
+.img-project {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.img-project::-webkit-scrollbar {
+  width: 18px;
+}
+.img-project::-webkit-scrollbar-thumb {
+  background: var(--vermelho);
+  border-radius: 18px;
+  border-left: 4px solid #181818;
+  border-right: 4px solid #181818;
+}
+.img-project::-webkit-scrollbar-track {
+  background: #181818;
+}
+.x {
+  width: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+}
+/* */
+.desc-project {
+  color: white;
+  text-align: center;
+}
+
+/* */
+.tecno-project {
+  text-align: center;
+  color: green;
+}
