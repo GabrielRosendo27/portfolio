@@ -8,6 +8,8 @@ const DescH1 = document.querySelector(".desc-project h1");
 const DescP = document.querySelector(".desc-project p");
 const TecnoLi = document.querySelectorAll(".tecno-project ul li");
 //
+const newLi = document.createElement("li");
+//
 function addClass() {
   imgTrack.removeAttribute("id");
   imgTrack.classList.add("image-slide");
@@ -71,10 +73,10 @@ imgs.forEach((i) => {
 arrow.onclick = removeClass;
 //
 function projectOne() {
+  resetProject();
   imgProject.insertAdjacentHTML("afterbegin", '<img src="img/bikcraft.png" draggable="false" class="x" />');
   DescH1.innerHTML = "Bikcraft";
-  DescP.innerHTML =
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quos, eligendi explicabo itaque, quam nam consequuntur perferendis vitae saepe culpa nostrum dolorem. Architecto, alias fugiat. Maxime officiis repudiandae ipsam adipisci!";
+  DescP.innerHTML = "xurima!";
   const valores = {
     0: "HTML",
     1: "CSS",
@@ -85,6 +87,7 @@ function projectOne() {
 }
 //
 function projectTwo() {
+  resetProject();
   imgProject.insertAdjacentHTML("afterbegin", '<img src="img/jogodavelha.png" draggable="false" class="x" />');
   DescH1.innerHTML = "Jogo Da Velha";
   DescP.innerHTML =
@@ -96,9 +99,15 @@ function projectTwo() {
   TecnoLi.forEach((item, pos) => {
     item.innerHTML = valores[pos];
     if (pos === 1) {
-      const newLi = document.createElement("li");
       newLi.innerHTML = "JavaScript";
       item.insertAdjacentElement("afterend", newLi);
     }
   });
+}
+function resetProject() {
+  const imgX = document.querySelector(".img-project img");
+  if (imgX && newLi) {
+    imgX.remove();
+    newLi.remove();
+  }
 }
