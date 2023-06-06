@@ -43,6 +43,9 @@ function showProject() {
     1: () => {
       projectTwo();
     },
+    2: () => {
+      projectThree();
+    },
   };
   //
   imgs.forEach((i, p) => {
@@ -78,8 +81,8 @@ function projectOne() {
   DescH1.innerHTML = "Bikcraft";
   DescP.innerHTML = "xurima!";
   const valores = {
-    0: "HTML",
-    1: "CSS",
+    0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
+    1: '<img src="img/css.svg" draggable="false" class="icon-svg" />',
   };
   TecnoLi.forEach((item, pos) => {
     item.innerHTML = valores[pos];
@@ -88,22 +91,40 @@ function projectOne() {
 //
 function projectTwo() {
   resetProject();
-  imgProject.insertAdjacentHTML("afterbegin", '<img src="img/jogodavelha.png" draggable="false" class="x" />');
+  imgProject.insertAdjacentHTML("afterbegin", '<img src="img/jogodavelha.png" draggable="false" class="x-s" />');
   DescH1.innerHTML = "Jogo Da Velha";
   DescP.innerHTML =
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quos, eligendi explicabo itaque, quam nam consequuntur perferendis vitae saepe culpa nostrum dolorem. Architecto, alias fugiat. Maxime officiis repudiandae ipsam adipisci!";
   const valores = {
-    0: "HTML",
-    1: "CSS",
+    0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
+    1: '<img src="img/css.svg" draggable="false" class="icon-svg" />',
   };
   TecnoLi.forEach((item, pos) => {
     item.innerHTML = valores[pos];
     if (pos === 1) {
-      newLi.innerHTML = "JavaScript";
-      item.insertAdjacentElement("afterend", newLi);
+      (newLi.innerHTML = '<img src="img/js.svg" draggable="false" class="icon-svg" />'), item.insertAdjacentElement("afterend", newLi);
     }
   });
 }
+//
+function projectThree() {
+  resetProject();
+  imgProject.insertAdjacentHTML("afterbegin", '<img src="img/gbx.png" draggable="false" class="x-s" />');
+  DescH1.innerHTML = "GBX Converter";
+  DescP.innerHTML =
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quos, eligendi explicabo itaque, quam nam consequuntur perferendis vitae saepe culpa nostrum dolorem. Architecto, alias fugiat. Maxime officiis repudiandae ipsam adipisci!";
+  const valores = {
+    0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
+    1: '<img src="img/css.svg" draggable="false" class="icon-svg" />',
+  };
+  TecnoLi.forEach((item, pos) => {
+    item.innerHTML = valores[pos];
+    if (pos === 1) {
+      (newLi.innerHTML = '<img src="img/js.svg" draggable="false" class="icon-svg" />'), item.insertAdjacentElement("afterend", newLi);
+    }
+  });
+}
+//
 function resetProject() {
   const imgX = document.querySelector(".img-project img");
   if (imgX && newLi) {
