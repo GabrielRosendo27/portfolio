@@ -6,6 +6,7 @@ const containerProject = document.querySelector(".project-container");
 const imgProject = document.querySelector(".img-project");
 const DescH1 = document.querySelector(".desc-project h1");
 const DescP = document.querySelector(".desc-project p");
+const DescLink = document.querySelector(".desc-project a");
 const TecnoLi = document.querySelectorAll(".tecno-project ul li");
 //
 const newLi = document.createElement("li");
@@ -79,7 +80,9 @@ function projectOne() {
   resetProject();
   imgProject.insertAdjacentHTML("afterbegin", '<img src="img/bikcraft.png" draggable="false" class="x" />');
   DescH1.innerHTML = "Bikcraft";
-  DescP.innerHTML = "xurima!";
+  DescP.innerHTML =
+    "Site fictício de uma empresa chamada Bikcraft, feito totalmente em HTML e CSS, foi fundamental para consolidar conhecimentos nessas tecnologias e em como elas interagem entre si.";
+  DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/projetobikcraft");
   const valores = {
     0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
     1: '<img src="img/css.svg" draggable="false" class="icon-svg" />',
@@ -95,6 +98,7 @@ function projectTwo() {
   DescH1.innerHTML = "Jogo Da Velha";
   DescP.innerHTML =
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quos, eligendi explicabo itaque, quam nam consequuntur perferendis vitae saepe culpa nostrum dolorem. Architecto, alias fugiat. Maxime officiis repudiandae ipsam adipisci!";
+  DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/jogodavelha");
   const valores = {
     0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
     1: '<img src="img/css.svg" draggable="false" class="icon-svg" />',
@@ -113,6 +117,7 @@ function projectThree() {
   DescH1.innerHTML = "GBX Converter";
   DescP.innerHTML =
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quos, eligendi explicabo itaque, quam nam consequuntur perferendis vitae saepe culpa nostrum dolorem. Architecto, alias fugiat. Maxime officiis repudiandae ipsam adipisci!";
+  DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/gbx-converter");
   const valores = {
     0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
     1: '<img src="img/css.svg" draggable="false" class="icon-svg" />',

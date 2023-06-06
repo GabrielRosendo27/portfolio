@@ -149,10 +149,26 @@ body {
 }
 /* */
 .desc-project {
+  display: grid;
+  align-items: center;
   color: white;
   text-align: center;
 }
-
+.desc-project h1 {
+  font-size: 3rem;
+}
+.desc-project p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  word-spacing: 1px;
+  text-align: left;
+  margin-left: 65px;
+}
+.desc-project a {
+  color: var(--vermelho);
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
 /* */
 .tecno-project {
   text-align: center;
