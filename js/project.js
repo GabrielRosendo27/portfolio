@@ -96,8 +96,7 @@ function projectTwo() {
   resetProject();
   imgProject.insertAdjacentHTML("afterbegin", '<img src="img/jogodavelha.png" draggable="false" class="x-s" />');
   DescH1.innerHTML = "Jogo Da Velha";
-  DescP.innerHTML =
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quos, eligendi explicabo itaque, quam nam consequuntur perferendis vitae saepe culpa nostrum dolorem. Architecto, alias fugiat. Maxime officiis repudiandae ipsam adipisci!";
+  DescP.innerHTML = "Jogo da velha clássico, feito principalmente para desenvolver exercícios envolvendo lógica em JavaScript";
   DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/jogodavelha");
   const valores = {
     0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
@@ -116,7 +115,7 @@ function projectThree() {
   imgProject.insertAdjacentHTML("afterbegin", '<img src="img/gbx.png" draggable="false" class="x-s" />');
   DescH1.innerHTML = "GBX Converter";
   DescP.innerHTML =
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quos, eligendi explicabo itaque, quam nam consequuntur perferendis vitae saepe culpa nostrum dolorem. Architecto, alias fugiat. Maxime officiis repudiandae ipsam adipisci!";
+    "GBX Converter, é um projeto feito com o objetivo de adquirir conhecimento sobre Web Scrapping. <br>O usuário insere um link de vídeo do youtube, esse link é capturado e enviado a outro site que faz a conversão para o formato mp3 e retorna o link com o download.<br><br> • Utiliza o framework Express do Node.js para criar o servidor <br> • Utiliza a biblioteca Puppeteer do Node.js para controlar o Chrome, automatizando a interação com o navegador.<br> • Projeto desatualizado ";
   DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/gbx-converter");
   const valores = {
     0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
