@@ -42,20 +42,20 @@ body {
   transition: all 0.3s;
 }
 .arrow {
-  color: white;
-  font-weight: bold;
   display: none;
-  cursor: pointer;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: -40px;
-  top: 0px;
+  cursor: pointer;
   padding: 8px 6px;
-  background: green;
-  border-radius: 2px;
+  background: var(--vermelho);
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
 }
 .arrow:hover {
-  background-color: greenyellow;
-  color: black;
+  background-color: rgb(238, 72, 72);
 }
 .images:hover {
   padding: 1vmin !important;
@@ -72,7 +72,7 @@ body {
 /* back button  */
 .back-button-div {
   position: relative;
-  top: 69%;
+  top: 62vh;
   width: 100%;
   text-align: center;
 }
@@ -80,14 +80,21 @@ body {
   display: inline-block;
   color: white;
   font-weight: 600;
-  padding: 10px 22px;
-  border-radius: 8px;
-  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1.1rem;
   letter-spacing: 0.5px;
   text-decoration: none;
   text-align: center;
   user-select: none;
+  background-color: #4caf50;
+  transition: background-color 0.3s ease;
 }
+
+.back-button:hover {
+  background-color: #45a049;
+}
+
 /* icons  */
 .icons-div {
   display: flex;
@@ -106,24 +113,27 @@ body {
   width: 24px;
 }
 .icon-svg {
-  width: 100px;
-  margin-top: 30px;
+  width: 60px;
 }
 
 /* */
 .project-container {
   display: none;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1200px;
-  height: 450px;
-  margin: 145px auto 0px auto;
-  border-radius: 6px;
+  width: 95vw;
+  height: 70vh;
+  margin: 10px auto 0px auto;
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
 }
 .img-project {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 350px;
   overflow-y: scroll;
+  background-color: #525252;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 .img-project::-webkit-scrollbar {
   width: 18px;
@@ -149,13 +159,13 @@ body {
 }
 /* */
 .desc-project {
-  display: grid;
-  align-items: center;
   color: white;
   text-align: center;
 }
 .desc-project h1 {
   font-size: 2rem;
+  color: #888888;
+  margin-bottom: 10px;
 }
 .desc-project p {
   font-size: 1.1rem;
@@ -163,101 +173,25 @@ body {
   word-spacing: 2px;
   text-align: left;
   margin-left: 20px;
+  color: rgb(170, 170, 170);
 }
 .desc-project a {
+  display: block;
   color: var(--vermelho);
   font-size: 1.3rem;
   letter-spacing: 1px;
 }
 /* */
-.tecno-project {
-  text-align: center;
-}
-/* CSS */
-.project-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 95vw;
-  height: 70vh;
-  padding: 25px;
-}
-
-.img-project {
-  width: 350px;
-  height: 350px;
-  background-color: #fff;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 12px rgba(224, 224, 224, 0.1);
-}
-
-.desc-project {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.desc-project h1 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.desc-project p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.desc-project a {
-  display: block;
-  font-size: 14px;
-  color: #999;
-  text-decoration: none;
-}
-
 .tecno-project ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
 }
-
 .tecno-project li {
   margin: 0 5px;
 }
-
-.icon-svg {
-  width: 60px;
-}
-
-.back-button-div {
-  text-align: center;
-}
-
-.back-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #45a049;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10px;
-  font-size: 24px;
-  color: #333;
-  cursor: pointer;
+/* */
+.bg123 {
+  background: #252525;
+  width: 100%;
+  height: 150px;
 }
