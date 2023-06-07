@@ -69,49 +69,8 @@ body {
   left: 650px;
   padding: 6px 12px;
 }
-/* back button  */
-.back-button-div {
-  position: relative;
-  top: 62vh;
-  width: 100%;
-  text-align: center;
-}
-.back-button {
-  display: inline-block;
-  color: white;
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-  text-align: center;
-  user-select: none;
-  background-color: #4caf50;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #45a049;
-}
 
 /* icons  */
-.icons-div {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 10px;
-  margin-top: 30px;
-  margin-right: 35px;
-  margin-bottom: 30px;
-  user-select: none;
-}
-.icon-1p {
-  width: 24px;
-}
-.icon-2p {
-  width: 24px;
-}
 .icon-svg {
   width: 60px;
 }
@@ -191,7 +150,12 @@ body {
 }
 /* */
 .bg123 {
-  background: #252525;
+  /* background: #252525; */
   width: 100%;
   height: 150px;
+}
+/* logo  */
+.logo {
+  position: absolute;
+  width: 150px;
 }
