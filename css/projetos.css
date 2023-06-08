@@ -157,5 +157,7 @@ body {
 /* logo  */
 .logo {
   position: absolute;
-  width: 150px;
+  top: 10px;
+  left: 20px;
+  width: 100px;
 }
