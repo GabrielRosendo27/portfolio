@@ -86,6 +86,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.anim {
+  animation: anim 0.6s;
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .img-project {
   width: 350px;
   height: 350px;

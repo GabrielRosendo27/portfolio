@@ -17,6 +17,9 @@ function addClass() {
   imgs.forEach((i) => {
     i.classList.remove("image");
     i.classList.add("images");
+    containerProject.classList.remove("anim");
+    void containerProject.offsetWidth;
+    containerProject.classList.add("anim");
   });
   arrow.style.display = "block";
   containerProject.style.display = "grid";
@@ -90,6 +93,7 @@ function projectOne() {
   TecnoLi.forEach((item, pos) => {
     item.innerHTML = valores[pos];
   });
+  //
 }
 //
 function projectTwo() {
@@ -108,6 +112,7 @@ function projectTwo() {
       (newLi.innerHTML = '<img src="img/js.svg" draggable="false" class="icon-svg" />'), item.insertAdjacentElement("afterend", newLi);
     }
   });
+  //
 }
 //
 function projectThree() {
@@ -127,6 +132,7 @@ function projectThree() {
       (newLi.innerHTML = '<img src="img/js.svg" draggable="false" class="icon-svg" />'), item.insertAdjacentElement("afterend", newLi);
     }
   });
+  //
 }
 //
 function resetProject() {
