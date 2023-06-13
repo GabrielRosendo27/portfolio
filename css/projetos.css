@@ -14,6 +14,16 @@ body {
   transform: translate(0%, -50%);
   user-select: none;
   transition: all 0.2s;
+  animation: trackAnim 1s;
+}
+@keyframes trackAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-42%);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 #image-track > .image {
   width: 40vmin;
