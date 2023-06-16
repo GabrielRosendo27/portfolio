@@ -8,7 +8,7 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   transition: all 1s;
   animation: sobreAnim 1s;
 }
@@ -39,21 +39,25 @@
   justify-self: center;
   animation: imgAnim 1s;
 }
-.sobre-mim h1 {
+.sobre-mim-text {
+  padding: 0 25px;
+}
+.sobre-mim-text h1 {
   color: var(--branco);
   letter-spacing: -0.5px;
   font-size: 2.3rem;
   font-weight: 400;
   line-height: 2rem;
 }
-.sobre-mim span {
+.sobre-mim-text span {
   color: var(--vermelho);
   font-size: 1.6rem;
   font-weight: 400;
   margin-left: 170px;
-  display: block;
+  display: inline-block;
   margin-bottom: 30px;
   letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 .sobre-mim p {
   color: var(--branco2);
@@ -95,4 +99,22 @@
   width: 24px;
   top: 15px;
   left: 35px;
+}
+
+/* responsive  */
+
+@media (max-width: 1000px) {
+  .sobre-mim {
+    gap: 0px;
+  }
+}
+@media (max-width: 850px) {
+  .sobre-mim {
+    width: 450px;
+    grid-template-columns: 1fr;
+    transition: 1.6s;
+  }
+  .imagem {
+    display: none;
+  }
 }
