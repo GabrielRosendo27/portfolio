@@ -100,7 +100,7 @@ function projectTwo() {
   resetProject();
   imgProject.insertAdjacentHTML("afterbegin", '<img src="img/jogodavelha.png" draggable="false" class="x-s" />');
   DescH1.innerHTML = "Jogo Da Velha";
-  DescP.innerHTML = "Jogo da velha clássico, feito principalmente para desenvolver exercícios envolvendo lógica em JavaScript";
+  DescP.innerHTML = "Jogo da velha clássico, feito principalmente para desenvolver exercícios envolvendo lógica em JavaScript.";
   DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/jogodavelha");
   const valores = {
     0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
