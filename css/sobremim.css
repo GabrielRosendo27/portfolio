@@ -117,4 +117,7 @@
   .imagem {
     display: none;
   }
+  .container {
+    min-width: 500px;
+  }
 }
