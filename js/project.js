@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imgProject.insertAdjacentHTML("afterbegin", '<img src="img/bikcraft.png" draggable="false" class="x" />');
     DescH1.innerHTML = "Bikcraft";
     DescP.innerHTML =
-      "Site fictício de uma empresa chamada Bikcraft, feito totalmente em HTML e CSS, foi fundamental para consolidar conhecimentos nessas tecnologias e em como elas interagem entre si.";
+      "<br><br>Site fictício de uma empresa chamada Bikcraft feito apenas com HTML e CSS. <br><br>• Contém 6 páginas, Home, Orçamento, Seguros, Termos, Bicicletas e Contato.<br><br> Foi fundamental para consolidar meus conhecimentos nessas tecnologias e em como elas interagem entre si.";
     DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/projetobikcraft");
     const valores = {
       0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     resetProject();
     imgProject.insertAdjacentHTML("afterbegin", '<img src="img/jogodavelha.png" draggable="false" class="x-s" />');
     DescH1.innerHTML = "Jogo Da Velha";
-    DescP.innerHTML = "Jogo da velha clássico, feito principalmente para desenvolver exercícios envolvendo lógica em JavaScript.";
+    DescP.innerHTML = "<br><br><br>Jogo da velha clássico, feito principalmente para desenvolver exercícios envolvendo lógica em JavaScript.<br><br>";
     DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/jogodavelha");
     const valores = {
       0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',

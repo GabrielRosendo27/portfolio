@@ -81,19 +81,19 @@ body {
 
 /* icons  */
 .icon-svg {
-  width: 60px;
+  width: 40px;
 }
 
 /* */
 .project-container {
   max-width: 1200px;
+  height: 100vh;
   margin: 0 auto;
   display: none;
   grid-template-columns: 1fr 2fr;
+  gap: 30px;
   align-items: center;
-  justify-content: center;
   padding: 20px;
-  height: 100vh;
 }
 .project-container a {
   width: max-content;
@@ -114,13 +114,11 @@ body {
   }
 }
 .img-project {
-  width: 350px;
-  height: 350px;
+  width: 370px;
+  height: 370px;
   overflow-y: scroll;
-  background-color: #525252;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  background: green;
+  background-color: var(--cinza-escuro);
+  border-radius: 6px;
 }
 
 .img-project::-webkit-scrollbar {
@@ -148,19 +146,24 @@ body {
 /* */
 .desc-project {
   color: white;
+  height: 40vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .desc-project h1 {
   font-size: 2rem;
   color: #888888;
 }
 .desc-project p {
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   word-spacing: 2px;
   text-align: left;
   color: rgb(170, 170, 170);
   word-wrap: break-word;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .desc-project a {
   display: block;
@@ -171,7 +174,7 @@ body {
 /* */
 .tecno-project ul {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 .tecno-project li {
   margin: 0 5px;
