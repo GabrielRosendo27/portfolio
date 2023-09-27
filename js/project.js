@@ -51,6 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
       2: () => {
         projectThree();
       },
+      3: () => {
+        projectFour();
+      },
+      4: () => {
+        projectFive();
+      },
     };
     //
     imgs.forEach((i, p) => {
@@ -136,6 +142,38 @@ document.addEventListener("DOMContentLoaded", function () {
     //
   }
   //
+  function projectFour() {
+    resetProject();
+    imgProject.insertAdjacentHTML("afterbegin", '<img src="img/exame.png" draggable="false" class="x-s" />');
+    DescH1.innerHTML = "Exame";
+    DescP.innerHTML = "<br> Projeto do Exame <br> ";
+    DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/Exame-Java");
+    const valores = {
+      0: '<img src="img/java-icon.svg" draggable="false" class="icon-svg" />',
+      1: '<img src="img/java-icon.svg" draggable="false" class="icon-svg rmv"/>',
+    };
+    TecnoLi.forEach((item, pos) => {
+      item.innerHTML = valores[pos];
+    });
+  }
+  //
+  function projectFive() {
+    resetProject();
+    imgProject.insertAdjacentHTML("afterbegin", '<img src="img/telalog.png" draggable="false" class="x-s" />');
+    DescH1.innerHTML = "Tela de Login e Cadastro";
+    DescP.innerHTML =
+      "<br> Tela de Login e Cadastro com banco de dados MySQL zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br><br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br> ";
+    DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/TelaLogin");
+    const valores = {
+      0: '<img src="img/java-icon.svg" draggable="false" class="icon-svg" />',
+      1: '<img src="img/mysql.svg" draggable="false" class="icon-svg mysql" />',
+    };
+    TecnoLi.forEach((item, pos) => {
+      item.innerHTML = valores[pos];
+    });
+  }
+  //
+
   function resetProject() {
     const imgX = document.querySelector(".img-project img");
     if (imgX && newLi) {

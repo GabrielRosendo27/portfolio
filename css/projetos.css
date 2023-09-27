@@ -145,8 +145,9 @@ body {
 }
 /* */
 .desc-project {
-  color: white;
+  width: 55vw;
   height: 40vh;
+  color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -178,6 +179,13 @@ body {
 }
 .tecno-project li {
   margin: 0 5px;
+}
+.rmv {
+  display: none;
+}
+.mysql {
+  width: 72px;
+  margin-top: -16px;
 }
 /* */
 
