@@ -55,13 +55,32 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -40px;
+  left: -45px;
   cursor: pointer;
-  padding: 8px 6px;
+  padding: 6px 8px;
   background: var(--vermelho);
   border-radius: 4px;
   font-weight: bold;
   color: #fff;
+  font-size: 1.2rem;
+}
+.arrow-2 {
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 35px;
+}
+.arrow-2 a {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background: var(--vermelho);
+  padding: 7px 8px;
+  cursor: pointer;
+}
+.arrow-2 a:hover {
+  background-color: rgb(238, 72, 72);
 }
 .arrow:hover {
   background-color: rgb(238, 72, 72);
@@ -89,10 +108,11 @@ body {
   max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
+  margin-top: 14vw;
   display: none;
   grid-template-columns: 1fr 2fr;
   gap: 30px;
-  align-items: center;
+  align-items: start;
   padding: 20px;
 }
 .project-container a {
@@ -143,9 +163,13 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.x-x {
+  border: 1px solid rgb(99, 98, 98);
+  border-radius: 4px;
+}
 /* */
 .desc-project {
-  height: 40vh;
+  height: 60vh;
   color: white;
   text-align: center;
   display: flex;

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const imgTrack = document.getElementById("image-track");
   const imgs = document.querySelectorAll(".image");
   const arrow = document.querySelector(".arrow");
+  const arrow2 = document.querySelector(".arrow-2");
   //
   const containerProject = document.querySelector(".project-container");
   const imgProject = document.querySelector(".img-project");
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       containerProject.classList.add("anim");
     });
     arrow.style.display = "block";
+    arrow2.style.display = "none";
     containerProject.style.display = "grid";
   }
   //
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         i.classList.remove("images");
         i.classList.add("image");
         arrow.style.display = "none";
+        arrow2.style.display = "block";
         i.style.opacity = "1";
       });
       containerProject.style.display = "none";
@@ -122,29 +125,11 @@ document.addEventListener("DOMContentLoaded", function () {
     //
   }
   //
+
+  //
   function projectThree() {
     resetProject();
-    imgProject.insertAdjacentHTML("afterbegin", '<img src="img/gbx.png" draggable="false" class="x-s" />');
-    DescH1.innerHTML = "GBX Converter";
-    DescP.innerHTML =
-      "GBX Converter, é um projeto feito com o objetivo de adquirir conhecimento sobre Web Scrapping. <br>O usuário insere um link de vídeo do youtube, esse link é capturado e enviado a outro site que faz a conversão para o formato mp3 e retorna o link com o download.<br><br> • Utiliza o framework Express do Node.js para criar o servidor <br> • Utiliza a biblioteca Puppeteer do Node.js para controlar o Chrome, automatizando a interação com o navegador.<br> • Projeto desatualizado ";
-    DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/gbx-converter");
-    const valores = {
-      0: '<img src="img/html.svg" draggable="false" class="icon-svg" />',
-      1: '<img src="img/css.svg" draggable="false" class="icon-svg" />',
-    };
-    TecnoLi.forEach((item, pos) => {
-      item.innerHTML = valores[pos];
-      if (pos === 1) {
-        (newLi.innerHTML = '<img src="img/js.svg" draggable="false" class="icon-svg" />'), item.insertAdjacentElement("afterend", newLi);
-      }
-    });
-    //
-  }
-  //
-  function projectFour() {
-    resetProject();
-    imgProject.insertAdjacentHTML("afterbegin", '<img src="img/exame.png" draggable="false" class="x-s" />');
+    imgProject.insertAdjacentHTML("afterbegin", '<img src="img/telaExame2.png" draggable="false" class="x-s" />');
     DescH1.innerHTML = "Exame";
     DescP.innerHTML =
       " O programa tem como objetivo monitorar 3 tipos de exames, o de glicemia, colesterol e triglicerídeo. <br> Todos os exames armazenam algumas características em comum, nome do paciente, tipo sanguíneo e ano de nascimento. <br><br> • Exame de Glicemia: além dos dados do exame, armazena a quantidade de glicose por mg/l <br><br> • Exame de Colesterol: além dos dados do exame, armazena a quantidade de LDL e HDL por mg/l e o risco do paciente (B - baixo, M - medio e A - alto) <br><br> • Exame de Triglicerídeos: além dos dados do exame, armazena a quantidade de triglicerídeo por ml/l <br><br> Os exames possuem alguns métodos. <br><br> • Para Glicemia: Normoglicemia: Inferior a 100 mg/dL <br> • Pré-diabetes: Superior ou igual a 100 mg/dL eles Inferior a 126 mg/dL <br> • Diabetes estabelecido: Superior ou igual a 126 mg/dL <br><br> Para Colesterol HDL: <br> • De 0 a 19 anos..: superior a 45 mg/dL (HDL - BOM) <br> • Acima de 20 anos: superior a 40 mg/dL (HDL - BOM) <br> Para Colesterol LDL:<br> • Se o paciente for risco baixo, o colesterol LDL deve estar abaixo de 100 mg/dL <br> •  Se o paciente for risco médio, o colesterol LDL deve estar abaixo de 70 mg/dL <br> • Se o paciente for risco alto, o colesterol LDL deve estar abaixo de 50 mg/dL <br> Para Triglicerídeos: <br> • De 0 a 9 anos: Com jejum: inferior a 75 mg/dL <br> • De 10 a 19 anos: Com jejum: inferior a 90 mg/dL <br> • Acima de 20 anos: Com Jejum: inferior a 150 mg/dL <br> <br> Projeto desenvolvido para a faculdade, com foco em adquirir conhecimentos em Orientação a Objetos em Java. ";
@@ -159,11 +144,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   //
-  function projectFive() {
+  function projectFour() {
     resetProject();
-    imgProject.insertAdjacentHTML("afterbegin", '<img src="img/telalog.png" draggable="false" class="x-s" />');
-    DescH1.innerHTML = "Tela de Login e Cadastro";
-    DescP.innerHTML = "<br> Tela de Login e Cadastro com banco de dados MySQL zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br> ";
+    imgProject.insertAdjacentHTML("afterbegin", '<img src="img/telaLogin.png" draggable="false" class="x-s" />');
+    DescH1.innerHTML = "Tela de Login e Cadastro com mySQL";
+    DescP.innerHTML =
+      "<br>O usuário pode criar uma nova conta que será salva em um banco de dados, caso já tenha uma conta, é possível acessar diretamente com o Login e a Senha.<br><br>Utiliza o JOptionPane para criar a interface com a tela de Login e Cadastro.<br><br>O banco de dados mySQL salva as informações do usuário.<br> ";
     DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/TelaLogin");
     const valores = {
       0: '<img src="img/java-icon.svg" draggable="false" class="icon-svg" />',
@@ -174,7 +160,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   //
+  function projectFive() {
+    resetProject();
+    imgProject.insertAdjacentHTML("afterbegin", '<img src="img/botDiscImg/imgBotDisc.png" draggable="false" class="x-s" />');
+    DescH1.innerHTML = "Discord Bot";
+    DescP.innerHTML =
+      "<br>Bot de Discord que utiliza Web Scrapping, feito em python, para conseguir informações de jogadores de um jogo chamado Tibia.<br><br> O bot, a partir de um comando específico recebido pelo Discord, executa operações assíncronas de Scrapping no site escolhido e recolhe as informações pertinentes e as traz de volta em forma de mensagem no próprio Discord.<br><br> Exemplo utilizando o comando '!add *NomeDoPersonagem*'<br>";
+    DescP.insertAdjacentHTML("beforeend", '<br><img src="img/botDiscImg/comandoAdd.png" alt="Imagem do Bot de Discord" class="x-x" /> <br> ');
+    DescP.insertAdjacentHTML(
+      "beforeend",
+      "<br>Após utilizar o comando, o bot retorna as informações do personagem diretamente no canal do Discord.<br> Após adicionado um personagem através do nome, ele fica com suas informações salvas no banco de dados SQLite.<br><br> Uma vez salvo o personagem, o bot também faz uma verificação, a cada minuto após ser iniciado, onde ele compara as informações do site com as encontradas no banco de dados, e se há alguma alteração ele informa qual mudança de estado teve naquele personagem. Ele faz isso com todos os personagens no banco de dados. <br> Exemplo de alterações no estado de um personagem: <br>"
+    );
+    DescP.insertAdjacentHTML("beforeend", '<br><img src="img/botDiscImg/botStatus.png" alt="Imagem do Bot de Discord" class="x-x" /> <br> ');
+    DescP.insertAdjacentHTML(
+      "beforeend",
+      "<br> Nas alterações de estado ele atualiza as novas informações trazidas do site, como se o personagem evoluiu ou desceu de nível, ficou offline, e se o personagem foi morto no jogo.<br> Também é possível remover um personagem existente no banco de dados com o comando '!remove *NomeDoPersonagem*'<br>"
+    );
+    DescP.insertAdjacentHTML("beforeend", '<br><img src="img/botDiscImg/comandoRemove.png" alt="Imagem do Bot de Discord" class="x-x" /> <br> <br>');
+    DescP.insertAdjacentHTML(
+      "beforeend",
+      "O bot tem dependência com a biblioteca Selenium que é utilizada para usar as funções de um navegador e fazer a pesquisa de informações dos jogadores no site."
+    );
 
+    DescLink.setAttribute("href", "https://github.com/GabrielRosendo27/botDisc");
+    const valores = {
+      0: '<img src="img/python-icon.svg" draggable="false" class="icon-svg" />',
+      1: '<img src="img/sqlite-icon.svg" draggable="false" class="icon-svg" />',
+    };
+    TecnoLi.forEach((item, pos) => {
+      item.innerHTML = valores[pos];
+    });
+    //
+  }
   function resetProject() {
     const imgX = document.querySelector(".img-project img");
     if (imgX && newLi) {
