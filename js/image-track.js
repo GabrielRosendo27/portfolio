@@ -10,7 +10,8 @@ window.onmousedown = (e) => {
 // retornando o valor para Zero ao soltar o botão do mouse
 window.onmouseup = () => {
   track.dataset.mouseDownAt = "0";
-  track.dataset.prevPercentage = track.dataset.percentage; // guardando o valor da porcentagem após o usuário terminar de scrollar as imagens, assim o scroll não retorna a posição original
+  track.dataset.prevPercentage = parseFloat(track.dataset.percentage) || 0;
+  // guardando o valor da porcentagem após o usuário terminar de scrollar as imagens, assim o scroll não retorna a posição original
 };
 // Precisamos de uma maneira de saber o quão longe o caminho que o mouse percorre do ponto de início
 // mouseDownAt, MouseDelta, maxDelta
@@ -26,8 +27,9 @@ window.onmousemove = (e) => {
 
   // dividindo a posição relativa (mouseDelta) pela distância máxima (max delta) assim convertendo o valor para decimal
   // e multiplicando o decimal por 100, obtemos a porcentagem
-  const percentage = (mouseDelta / maxDelta) * -100,
-    nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage; // porcentagem do scroll após o usuário dar a primeira scrollada
+  const percentage = (mouseDelta / maxDelta) * -100;
+  let nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage; // porcentagem do scroll após o usuário dar a primeira scrollada
+  nextPercentage = isNaN(nextPercentage) ? 0 : nextPercentage;
 
   proximaPorcentagem = Math.max(Math.min(nextPercentage, 0), -100); // colocando um limite até onde é possível scrollar com a função Math
 
@@ -38,7 +40,7 @@ window.onmousemove = (e) => {
   // efeito de suavização ao scrollar as imagens
   track.animate(
     {
-      transform: `translate(${nextPercentage}%, -50%)`,
+      transform: `translate(${proximaPorcentagem}%, -50%)`,
     },
     { duration: 1200, fill: "forwards" }
   );
@@ -46,7 +48,7 @@ window.onmousemove = (e) => {
   for (const image of track.getElementsByClassName("image")) {
     image.animate(
       {
-        objectPosition: `${100 + nextPercentage}% center`,
+        objectPosition: `${100 + proximaPorcentagem}% center`,
       },
       { duration: 1200, fill: "forwards" }
     );
