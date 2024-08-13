@@ -284,3 +284,19 @@ body {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .img-project {
+    width: 200px;
+    height: 200px;
+    margin: 5px auto;
+  }
+  .tecno-project {
+    margin-top: 15px;
+    background: #252525;
+    padding: 5px;
+  }
+}
