@@ -256,7 +256,7 @@ body {
     height: 100vh;
   }
   .img-project {
-    width: 450px;
+    width: 425px;
     height: 300px;
     margin: 15px auto;
   }
@@ -280,8 +280,12 @@ body {
   body::-webkit-scrollbar-track {
     background: #181818;
   }
-  .image-slide {
+  .image-slide > .images {
     display: none;
+  }
+  .arrow {
+    top: 23vh;
+    left: -28rem;
   }
 }
 @media (max-width: 600px) {
@@ -298,5 +302,19 @@ body {
     margin-top: 15px;
     background: #252525;
     padding: 5px;
+  }
+  .arrow {
+    top: 11vh;
+    left: -52vw;
+  }
+}
+@media (max-width: 480px) {
+  .arrow {
+    left: -62vw;
+  }
+}
+@media (max-width: 350px) {
+  .arrow {
+    left: -70vw;
   }
 }

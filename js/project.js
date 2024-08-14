@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //
   const containerProject = document.querySelector(".project-container");
   const imgProject = document.querySelector(".img-project");
+  const Descpj = document.querySelector(".desc-project");
   const DescH1 = document.querySelector(".desc-project h1");
   const DescP = document.querySelector(".desc-project p");
   const DescLink = document.querySelector(".desc-project a");
@@ -219,6 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   function resetProject() {
     vercel.remove();
+    Descpj.scrollTop = 0;
     const imgX = document.querySelector(".img-project img");
     if (imgX && newLi) {
       imgX.remove();
